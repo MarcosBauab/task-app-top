@@ -20,7 +20,7 @@ function Overview(props) {
             {props.tarefas.map((tarefaIndividual, indice) => {
                 id += 1
                 return (
-                    editando == indice ?
+                    editando === indice ?
 
                         (<div className='editando' style={{ backgroundColor: 'gray' }} onMouseEnter={() => {
                             setVisivel(indice)
@@ -63,13 +63,13 @@ function Overview(props) {
 
                             <span key={id}>{id + '. ' + tarefaIndividual}</span>
                             <div className='tarefaInsider'>
-                                <button className='trf' style={visivel == indice ? { opacity: 1 } : { opacity: 0, pointerEvents: 'none' }} onClick={() => {
+                                <button className='trf' style={visivel === indice ? { opacity: 1 } : { opacity: 0, pointerEvents: 'none' }} onClick={() => {
 
                                     setNovaTarefa(tarefaIndividual)
                                     setEditando(indice)
 
                                 }}>Editar</button>
-                                <button className='trf' style={visivel == indice ? { opacity: 1 } : { opacity: 0, pointerEvents: 'none' }} onClick={() => {
+                                <button className='trf' style={visivel === indice ? { opacity: 1 } : { opacity: 0, pointerEvents: 'none' }} onClick={() => {
                                     props.onDeleter(tarefaIndividual)
                                 }}>X</button>
                                 {/*opacity: 0 pra sumir e contar o espaço ainda assim*/}
