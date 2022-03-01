@@ -1,0 +1,47 @@
+div.tarefa{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(61, 180, 180);
+
+    border-radius: 6px;
+
+    padding: 10px;
+
+    position: relative;
+
+    margin-bottom: 8px;
+
+    color: white;
+}
+
+div.tarefaInsider{
+    display: flex;
+    gap: 5px;
+}
+
+section{
+    width: 20%;
+}
+
+div.editando{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: gray;
+
+    border-radius: 6px;
+
+    padding: 10px;
+
+
+    margin-bottom: 8px;
+
+    color: white;
+}
+form.formEditando{
+    width: 100%;
+}

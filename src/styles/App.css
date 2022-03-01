@@ -1,0 +1,39 @@
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    flex-direction: column;
+    gap: 10px;
+
+    border: 2px solid greenyellow;
+}
+input{
+    outline: none;
+    padding: 5px;
+    width: 100%;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    width: 20%;
+}
+button{
+    padding: 8px;
+
+    border-radius: 5px;
+
+    background-color: rgba(34, 112, 34, 0.671);
+
+    border: none;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.37);
+
+    height: 30px;
+
+    cursor: pointer;
+}
+button:active{
+    background-color: rgba(34, 112, 34, 0.849);
+}
