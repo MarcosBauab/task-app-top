@@ -65,6 +65,7 @@ function Overview(props) {
                             <div className='tarefaInsider'>
                                 <button className='trf' style={visivel == indice ? { opacity: 1 } : { opacity: 0, pointerEvents: 'none' }} onClick={() => {
 
+                                    setNovaTarefa(tarefaIndividual)
                                     setEditando(indice)
 
                                 }}>Editar</button>
